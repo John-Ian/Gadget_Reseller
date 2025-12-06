@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | GadgetHub</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">GadgetHub</div>
+
+    <input type="text" id="searchInput" class="search-bar" placeholder="Search products..." onkeyup="searchProducts()">
+
+    <button class="mode-toggle" onclick="toggleMode()">🌙</button>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart 🛒</a>
+        <a href="help.html">Help Center</a>
+    </nav>
+</header>
+
+<h1 class="page-title">All Products</h1>
+
+<div class="product-grid">
+
+    <div class="product-card">
+        <img src="assets/phone.jpg">
+        <h3>Smartphone X</h3>
+        <p>$499</p>
+        <a href="product-detail.html" class="btn-sm">View</a>
+    </div>
+
+    <div class="product-card">
+        <img src="assets/laptop.jpg">
+        <h3>Laptop Pro</h3>
+        <p>$1299</p>
+        <a href="product-laptop.html" class="btn-sm">View</a>
+    </div>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

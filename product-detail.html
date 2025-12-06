@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone X | GadgetHub</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">GadgetHub</div>
+    <button class="mode-toggle" onclick="toggleMode()">🌙</button>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart 🛒</a>
+        <a href="help.html">Help Center</a>
+    </nav>
+</header>
+
+<div class="product-detail-container">
+
+    <div class="product-images">
+        <img src="assets/phone.jpg" class="main-img" id="mainImg">
+        <div class="thumbs">
+            <img src="assets/phone.jpg" onclick="changeImg(this.src)">
+            <img src="assets/phone2.jpg" onclick="changeImg(this.src)">
+            <img src="assets/phone3.jpg" onclick="changeImg(this.src)">
+        </div>
+    </div>
+
+    <div class="product-info">
+        <h1>Smartphone X</h1>
+        <p class="price">$499</p>
+        <p><strong>Description:</strong> Latest-gen smartphone with super-fast processor and OLED display.</p>
+
+        <h3>Features:</h3>
+        <ul>
+            <li>128GB Storage</li>
+            <li>6.5" OLED Screen</li>
+            <li>5G Support</li>
+        </ul>
+
+        <button class="btn" onclick="addToCart('Smartphone X', 499, 'assets/phone.jpg')">
+            Add to Cart
+        </button>
+    </div>
+</div>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

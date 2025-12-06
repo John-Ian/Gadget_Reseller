@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Pro 15 | GadgetHub</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">GadgetHub</div>
+
+    <button class="mode-toggle" onclick="toggleMode()">🌙</button>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart 🛒</a>
+        <a href="help.html">Help Center</a>
+    </nav>
+</header>
+
+<div class="product-detail-container">
+
+    <div class="product-images">
+        <img src="assets/laptop.jpg" class="main-img" id="mainImg">
+        <div class="thumbs">
+            <img src="assets/laptop.jpg" onclick="changeImg(this.src)">
+            <img src="assets/laptop2.jpg" onclick="changeImg(this.src)">
+            <img src="assets/laptop3.jpg" onclick="changeImg(this.src)">
+        </div>
+    </div>
+
+    <div class="product-info">
+        <h1>Laptop Pro 15</h1>
+        <p class="price">$1299</p>
+
+        <p><strong>Description:</strong>  
+        High-performance laptop designed for gaming, content creation, and professional workloads. Powered by next-gen hardware for maximum performance.</p>
+
+        <h3>Specifications</h3>
+        <ul>
+            <li>Intel i7 12th Gen Processor</li>
+            <li>16GB DDR4 RAM</li>
+            <li>512GB NVMe SSD</li>
+            <li>NVIDIA RTX 3060 (6GB)</li>
+            <li>15.6" 144Hz Full HD Display</li>
+            <li>RGB Backlit Keyboard</li>
+        </ul>
+
+        <button class="btn"
+            onclick="addToCart('Laptop Pro 15', 1299, 'assets/laptop.jpg')">
+            Add to Cart
+        </button>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

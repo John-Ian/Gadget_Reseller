@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GadgetHub | Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">GadgetHub</div>
+
+    <input type="text" id="searchInput" class="search-bar" placeholder="Search products..." onkeyup="searchProducts()">
+
+    <button class="mode-toggle" onclick="toggleMode()">🌙</button>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart 🛒</a>
+        <a href="help.html">Help Center</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Your #1 Gadget Store</h1>
+    <p>Best deals. Trusted reseller.</p>
+    <a href="products.html" class="btn">Browse Products</a>
+</section>
+
+<section class="categories">
+    <h2>Categories</h2>
+    <div class="category-grid">
+        <a class="category-card" href="products.html">Phones</a>
+        <a class="category-card" href="products.html">Laptops</a>
+        <a class="category-card" href="products.html">Gaming</a>
+        <a class="category-card" href="products.html">Accessories</a>
+    </div>
+</section>
+
+<section class="featured">
+    <h2>Featured Products</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="assets/phone.jpg" alt="">
+            <h3>Smartphone X</h3>
+            <p>$499</p>
+            <a href="product-detail.html" class="btn-sm">View</a>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/laptop.jpg" alt="">
+            <h3>Laptop Pro 15</h3>
+            <p>$1299</p>
+            <a href="product-laptop.html" class="btn-sm">View</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 GadgetHub | All rights reserved</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
